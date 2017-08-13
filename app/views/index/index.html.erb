@@ -1,0 +1,16 @@
+<div class="wrapper">
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, nam! Reiciendis corporis ullam dolore quae, culpa et veritatis fugit saepe velit optio maxime illum necessitatibus! Necessitatibus vel cumque voluptate doloremque rem minima in tempora placeat explicabo culpa repellendus saepe corporis quis provident unde error tempore eos, vero fuga architecto, deleniti! Adipisci quia eum perferendis, voluptatum nihil, repellendus asperiores laborum ducimus nam quos deleniti consectetur iure sint rerum est distinctio magni nesciunt. Ipsa cum ea, iusto debitis beatae nam laboriosam quae.</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint autem veniam, ipsa iure sapiente deleniti, debitis magni aliquam vel sed eaque nobis doloremque cupiditate, maiores! Qui, temporibus velit facilis numquam!</div>
+</div>
+<div>
+    <h1>Užrašai</h1><br />
+</div>
+<% @subject.each do |s| %>
+<div class="subject">
+    <h2><%= s.name %></h2></li><br />
+    <% s.topics.each do |t| %>
+    <h3><%= t.title %></h3></li><br />
+    <p><%= t.content %></p><br />
+    <% end %>
+</div>
+<% end %>
